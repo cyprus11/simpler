@@ -61,9 +61,5 @@ module Simpler
     def custom_response(body = nil, status)
       Rack::Response.new(body, status, {'Content-Type' => 'plain/text'}).finish
     end
-
-    def find_params(params)
-
-    end
   end
 end
